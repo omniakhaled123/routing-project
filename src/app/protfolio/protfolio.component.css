@@ -1,0 +1,17 @@
+.vh-90{
+    height: fit-content;
+}
+
+.layer{
+    background-color: #1abc9c;
+    opacity: 0;
+    transition: all .7s;
+    cursor: pointer;
+}
+figure:hover .layer{
+opacity: .8;
+}
+
+img{
+    z-index: 999;
+}

@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+.star{
+    font-size: large;
+}
+
+
+.dash{
+    height: 4px;
+    width: 90px;
+    background-color: #fff;
+}
+
+
+.padding2{
+
+    padding:200px 50px;
+}
+
+
+.active{
+    background-color: #1abc9c;
+    border-radius: 7px;
+    
+}
+.vh-90{
+    height: 90vh;
+}
+
+.pt-105{
+    padding-top: 85px;
+}

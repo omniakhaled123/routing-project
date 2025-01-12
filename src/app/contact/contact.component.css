@@ -1,0 +1,23 @@
+.vh-90{
+    height: 90vh;
+}
+
+.form-control:focus{
+    border-color: #2c3e50;
+}
+.top-40{
+    top: 40px !important;
+}
+label{
+    transition: all .5s;
+    color: #1abc9c;
+}
+button{
+   color: white;
+   background-color: #1abc9c;
+}
+button:hover{
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+}

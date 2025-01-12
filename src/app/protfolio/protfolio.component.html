@@ -1,0 +1,31 @@
+<section class="vh-90  d-flex justify-content-center align-items-center flex-column " >
+  <app-star [titlestar]="'Protfolio component'" [color]="'#2c3e50'"></app-star>
+
+<div class="container">
+    <div class="row g-4">
+     @for (img of protfolioimgs; track $index) {
+        <div class="col-lg-4 col-md-6">
+            <figure class=" position-relative overflow-hidden">
+                <img [src]="img" alt="port" class="rounded-3 w-100">
+                <div 
+                (click)="mark=false ; src=img"
+                class="layer position-absolute start-0 top-0 d-flex justify-content-center align-items-center w-100 h-100 rounded-3">
+                    <i class="fa-solid fa-plus fa-6x text-white"></i>
+    
+                </div>
+            </figure>
+        </div>
+     }
+       
+    </div>
+</div>
+</section>
+
+
+
+<div 
+(click)="hideimg($event.target , img)"
+[class.d-none]="mark"
+class="position-fixed w-100 h-100 bg-primary bg-opacity-25 start-0 top-0 d-flex justify-content-center align-items-center">
+<img #img [src]="src" alt="" width="650" class="rounded-3">
+</div>

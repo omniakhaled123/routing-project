@@ -1,0 +1,42 @@
+<section class="vh-90 d-flex justify-content-center align-items-center flex-column">
+    <app-star [titlestar]="'conatct section'" [color]="'#2c3e50'"></app-star>
+    <form action="" class="w-50 mx-auto">
+        <label for="userName"
+        class="my-2 position-relative top-0"
+        [class.top-40]="!userName.length"
+        >userName:</label>
+        <input type="text" placeholder="userName" id="userName" name="userName" 
+        [(ngModel)]="userName"
+        class="form-control shadow-none border-start-0 border-end-0 border-top-0 position-relative my-2">
+
+
+        <label for="userAge"
+        class="my-2 position-relative top-0"
+        [class.top-40]="!userAge"
+        >userAge:</label>
+        <input type="number" placeholder="userAge" id="userAge" name="userAge" 
+        [(ngModel)]="userAge"
+        class="form-control shadow-none border-start-0 border-end-0 border-top-0 position-relative my-2">
+
+        <label for="userEmail"
+        class="my-2 position-relative top-0"
+        [class.top-40]="!userEmail.length"
+        >userEmail:</label>
+        <input type="email" placeholder="userEmail" id="userEmail" name="userEmail" 
+        [(ngModel)]="userEmail"
+        class="form-control shadow-none border-start-0 border-end-0 border-top-0 position-relative my-2">
+
+
+        <label for="userPassword"
+        class="my-2 position-relative top-0"
+        [class.top-40]="!userPassword.length"
+        >userPassword:</label>
+        <input type="password" placeholder="userPassword" id="userPassword" name="userPassword" 
+        [(ngModel)]="userPassword"
+        class="form-control shadow-none border-start-0 border-end-0 border-top-0 position-relative my-2">
+
+        <button type="button" class="btn  mt-3" >Send Message</button>
+
+    </form>
+
+</section>
